@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    background-color: grey;
+    color: beige;
+}
+header {
+    background-color:purple;
+}
+
+#M2i {
+    text-align: left;
+    width: auto;
+    max-height: 20px;
+    padding: 15px;
+}
+.img {
+    width: 175px;
+}
+
+footer {
+    background-color: silver;
+    color: black;
+}
+
+nav a {
+    background:url(img/MicrosoftTeams-image.png) no-repeat;
+}
+
+.Top {
+    background-color:black;
+    color: blanchedalmond;
+    margin-bottom: auto;
+}
+#Sign {
+    text-align: right;
+}
+.button {
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+}

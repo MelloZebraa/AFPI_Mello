@@ -1,0 +1,26 @@
+html {
+    background-color: grey;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    color: orangered
+}
+body {
+    text-align: center;
+    color: white
+}
+
+.Horaires {
+    border-collapse: collapse;
+}
+
+table,
+tr,
+td {
+    padding: 5px;
+    margin: 10px auto;
+    border: 2px solid white
+}
