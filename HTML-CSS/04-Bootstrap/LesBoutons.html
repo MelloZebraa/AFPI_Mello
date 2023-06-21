@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import de bootstrap dans mon fichier HTML -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <!-- Import de mon fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Les boutons Bootstrap</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <h1>Les boutons Bootstrap</h1>
+        </header>
+
+        <main>
+            <h2 class="spaced">1) Exemples Boutons Bootstrap : </h2>
+            <!-- Copier/Coller de la box Bootstrap pour la création de boutons  -->
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-link">Link</button>
+
+            <h2 class="spaced">2) Button tags</h2>
+            <!-- Le framework s'applique à tous les types bouton => <a></a> <button></button> <input/> -->
+            <a class="btn btn-primary" href="#" role="button">Link</a>
+            <button class="btn btn-primary" type="submit">Button</button>
+            <input class="btn btn-primary" type="button" value="Input">
+            <input class="btn btn-primary" type="submit" value="Submit">
+            <input class="btn btn-primary" type="reset" value="Reset">
+
+            <h2 class="spaced">3) Outline buttons</h2>
+            <!-- Boutons Evidés bootstrap -->
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-light">Light</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+
+            <h2 class="spaced">4) Sizes in Bootstrap</h2>
+            <!-- Possibilité d'utiliser des tailles prédéfinie par Bootstrap -->
+            <h3 class="spaced">Large</h3>
+            <!-- Large -->
+            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+            <h3 class="spaced">Small</h3>
+            <!-- Small -->
+            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+            <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+
+            <h2 class="spaced">5) Custom Button</h2>
+            <button type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Custom button
+            </button>
+
+            <h2 class="spaced">6) Disabled state</h2>
+            <h3>&lt;button&gt;</h3>
+            <button type="button" class="btn btn-primary" disabled>Primary button</button>
+            <button type="button" class="btn btn-secondary" disabled>Button</button>
+            <button type="button" class="btn btn-outline-primary" disabled>Primary button</button>
+            <button type="button" class="btn btn-outline-secondary" disabled>Button</button>
+            <!-- &lt; => Chevron ouvrant    |  &gt; => Chevron fermant -->
+            <h3> &lt; a &gt; </h3>
+            <a class="btn btn-primary disabled" role="button" aria-disabled="true">Primary link</a>
+            <a class="btn btn-secondary disabled" role="button" aria-disabled="true">Link</a>
+
+            <h2 class="spaced">7) Block Buttons</h2>
+            <h3>Gap : 1</h3>
+            <div class="d-grid gap-1">
+                <button class="btn btn-primary" type="button">Button</button>
+                <button class="btn btn-primary" type="button">Button</button>
+            </div>
+            <h3>Gap : 2</h3>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="button">Button</button>
+                <button class="btn btn-primary" type="button">Button</button>
+            </div>
+            <h3>Gap : 3</h3>
+            <div class="d-grid gap-3">
+                <button class="btn btn-primary" type="button">Button</button>
+                <button class="btn btn-primary" type="button">Button</button>
+            </div>
+
+        </main>
+
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

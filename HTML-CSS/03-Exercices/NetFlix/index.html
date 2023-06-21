@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Import de bootstrap dans mon fichier HTML -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- Import de mon fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Import police -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Import FontAwesome -->
+    <script src="https://kit.fontawesome.com/38381ad738.js" crossorigin="anonymous"></script>
+
+    <!-- Titre dans la barre d'onglet du navigateur -->
+    <title>Netflix France - Regardez des séries</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="container-fluid header">
+                <!-- Barre Haut de Page -->
+                <div class="row">
+                    <div class="offset-2 col-2 flex">
+                        <img src="./assets/images/Netflix_Logo_PMS.png" alt="Logo NetFlix" height="75px">
+                    </div>
+                    <div class="offset-3 col-1 flex">
+                        <img src="./assets/images/LanguageBtn.png" alt="Button for language" height="35px">
+                    </div>
+                    <div class="col-1 flex">
+                        <button class="btn btn-danger red btn-sm">S'identifier</button>
+                    </div>
+                </div>
+
+                <div class="subHeader">
+                    <span class="mainTitle">Films et séries en illimité, et bien plus</span>
+                    <p class="subtitle">
+                        Où que vous soyez. Annulez à tout moment.
+                    </p>
+
+                    <p class="subtitle">
+                        Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre
+                        <br>
+                        abonnement.
+                    </p>
+
+                    <div class="limit">
+                        <input type="text" id="Search" placeholder="Adresse e-mail">
+                        <button class="btn btn-danger btn-lg red " id="commencer">Commencer &gt;</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Bandeau avec gradient CSS -->
+            <div class="relative">
+                <div class="absolute">
+                    <div class="parent">
+                        <div class="enfant">
+                            <img src="./assets/images/PopCorn.png" alt="Pot de Pop Corn">
+                        </div>
+                        <div class="enfant">
+                            <h5>Le Netflix que vous aimez pour juste 5,99 €.</h5>
+                            <h6 class="spaceBottom">Choisissez l'offre Standard avec pub.</h6>
+                            <a href="https://www.netflix.com/signup" class="blue">En savoir plus</a> <span
+                                class="blue">&gt;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <main>
+            <section class="tv flex">
+                <div class="gauche">
+                    <h1><b>Regardez netflix sur <br>votre TV</b></h1>
+                    <p class="tvText">
+                        Regardez Netflix sur votre Smart TV, PlayStation, Xbox,<br> Chromecast, Apple TV, lecteur
+                        Blu-ray et bien plus.
+                    </p>
+                </div>
+                <div class="droite">
+                    <div class="relative">
+                        <img src="./assets/images/tv.png" alt="Télévision" height="400px" class="relative">
+                        <video
+                            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+                            autoplay class="video"></video>
+                    </div>
+                </div>
+            </section>
+            <section class="section flex">
+                <div class="gauche">
+                    <img src="./assets/images/device-pile.png" alt="Cross Plateform" height="400px">
+                </div>
+                <div class="droite">
+                    <h1><b>Où que vous soyez</b></h1>
+                    <p class="tvText">
+                        Regardez des films et séries en accès illimité sur votre <br> TV, smartphone, tablette et
+                        ordinateur.
+                    </p>
+                </div>
+            </section>
+            <!-- Jeunesse -->
+            <section class="section flex">
+                <div class="gauche">
+                    <h1><b>Créez des profils pour<br> les enfants</b></h1>
+                    <p class="tvText">
+                        Les enfants découvrent de nouvelles aventures et <br>retrouvent leurs personnages préférés dans
+                        un espace <br>bien à eux, déjà inclus dans votre abonnement.
+                    </p>
+                </div>
+                <div class="droite">
+                    <img src="./assets/images/Jeunesse.png" alt="Cross Plateform" height="400px">
+
+                </div>
+            </section>
+
+            <section class="section flex">
+                <div class="gauche">
+                    <img src="./assets/images/mobile-0819.jpg" alt="Cross Plateform" height="400px">
+                </div>
+                <div class="droite">
+                    <h1><b>Téléchargez vos séries<br>pour les regarder hors<br>connection</b></h1>
+                    <p class="tvText">
+                        Uniquement disponible dans les offres sans pub.
+                    </p>
+                </div>
+            </section>
+
+            <!-- FAQ => Accordion -->
+            <section class="container-fluid section">
+                <div class="container center">
+                    <div class="faqTitle"><b>Foire aux questions</b></div>
+                    <div class="accordion accordion-flush" id="accordionFlush">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button accordion-bg-secondary collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Netflix, qu'est-ce que c'est ?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+                                <div class="accordion-body">
+                                    Netflix est un service de streaming qui propose une vaste sélection de séries,
+                                    films,
+                                    animes, documentaires et autres programmes sur des milliers d'appareils connectés à
+                                    Internet.
+                                    <br><br>
+                                    Regardez tout ce que vous voulez, quand vous voulez, à un prix mensuel très
+                                    attractif.
+                                    Découvrez de nouveaux films et séries chaque semaine, il y en a pour tous les goûts
+                                    !
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Combien coûte Netflix ?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlush">
+                                <div class="accordion-body">
+                                    Regardez Netflix sur votre smartphone, tablette, Smart TV, ordinateur ou appareil de
+                                    streaming, le tout pour un tarif mensuel fixe. Les offres vont de 5,99 € à 17,99 €
+                                    par
+                                    mois. Pas de contrat ni de frais supplémentaires.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Où puis-je regarder Netflix?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
+                                <div class="accordion-body">
+                                    Netflix, c'est où vous voulez, quand vous voulez. Connectez-vous à votre compte pour
+                                    regarder Netflix en ligne sur netflix.com depuis votre ordinateur ou tout appareil
+                                    connecté à Internet avec l'application Netflix, comme les Smart TV, smartphones,
+                                    tablettes, lecteurs de streaming et consoles de jeu.
+                                    <br><br>
+                                    Vous pouvez aussi télécharger vos séries préférées avec l'application iOS, Android
+                                    ou
+                                    Windows 10. Téléchargez des titres pour les regarder sur votre appareil mobile, même
+                                    sans connexion Internet. Emportez Netflix partout avec vous.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button accordion-bg-secondary collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    Comment puis-je annuler mon offre ?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlush">
+                                <div class="accordion-body">
+                                    Netflix offre une grande souplesse. Pas de contrat compliqué. Sans engagement. Deux
+                                    clics suffisent pour annuler votre compte en ligne. Pas de frais d'annulation :
+                                    ouvrez
+                                    ou fermez votre compte à tout moment.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    Que puis-je regarder sur Netflix ?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlush">
+                                <div class="accordion-body">
+                                    Netflix propose un vaste catalogue comprenant notamment des longs-métrages, des
+                                    documentaires, des séries, des animes et des programmes originaux Netflix primés.
+                                    Regardez Netflix à volonté, quand vous le voulez.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                    aria-controls="flush-collapseSix">
+                                    Est-ce que Netflix est adapté aux enfants ?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlush">
+                                <div class="accordion-body">
+                                    Netflix Jeunesse est inclus dans votre abonnement et offre un meilleur contrôle aux
+                                    parents, ainsi qu'un espace dédié aux enfants, avec des films et des séries destinés
+                                    à
+                                    toute la famille.
+                                    <br><br>
+                                    Les profils Jeunesse comportent des fonctionnalités de contrôle parental avec code
+                                    PIN
+                                    permettant de modifier la catégorie d'âge des contenus que vos enfants peuvent
+                                    regarder
+                                    et de bloquer des titres spécifiques.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p id="faq">
+                        Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver
+                        votre<br>
+                        abonnement.
+                    </p>
+                    <div class="limit">
+                        <input type="text" id="Search" placeholder="Adresse e-mail">
+                        <button class="btn btn-danger btn-lg red " id="commencer">Commencer &gt;</button>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <section class="container">
+
+                <p class="Questions">
+                    Des questions ? Appelez le (+33) 0805-543-063
+                </p>
+
+                <div class="row">
+                    <div class="col-4 colonne">
+                        <a href="https://help.netflix.com/fr/node/412">FAQ</a>
+                        <a href="https://media.netflix.com/fr/">Presse</a>
+                        <a href="https://www.netflix.shop/">Boutique Netflix</a>
+                        <a href="https://devices.netflix.com/fr/">Modes de lecture</a>
+                        <a href="https://www.netflix.com/fr/#">Préférences de cookies</a>
+                        <a href="https://fast.com/fr/">Test de vitesse</a>
+                        <a href="https://www.netflix.com/fr/browse/genre/839338">Seulement sur Netflix</a>
+                    </div>
+                    <div class="col-4 colonne">
+                        <a href="https://help.netflix.com/fr/">Centre d'aide</a>
+                        <a href="https://ir.netflix.net/ir-overview/profile/default.aspx">Relations Investisseurs</a>
+                        <a href="https://www.netflix.com/fr/redeem">Utiliser des cartes cadeaux</a>
+                        <a href="https://help.netflix.com/legal/termsofuse">Conditions d'utilisation</a>
+                        <a href="https://help.netflix.com/legal/corpinfo">Mentions légales</a>
+                        <a href="https://help.netflix.com/fr/node/125888">Garantie légale</a>
+                    </div>
+                    <div class="col-4 colonne">
+                        <a
+                            href="https://www.netflix.com/fr/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fyouraccount">Compte</a>
+                        <a href="https://jobs.netflix.com/">Recrutement</a>
+                        <a href="https://www.netflix.com/gift-cards">Acheter des cartes cadeaux</a>
+                        <a href="https://help.netflix.com/legal/privacy">Confidentialité</a>
+                        <a href="https://help.netflix.com/fr/contactus">Nous contacter</a>
+                        <a href="https://help.netflix.com/legal/notices">Informations légales</a>
+                    </div>
+                </div>
+
+                <div class="space">
+                    <img src="./assets/images/LanguageBtn.png" alt="Langage">
+                </div>
+
+                <div class="space2">
+                    Netflix France
+                </div>
+            </section>
+        </footer>
+
+
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

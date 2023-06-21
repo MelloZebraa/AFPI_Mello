@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="DDD.css">
+<head>
+  <title>Générateur de nombre aléatoire</title>
+  <script>
+    function genererNombreAleatoire() {
+      var nombre = Math.floor(Math.random() * 20) + 1;
+      var message = "";
+      
+      switch(nombre) {
+        case 1:
+          message = "Un personnage tombe malade.";
+          break;
+        case 2:
+          message = "Un personnage meurt.";
+          break;
+        case 3:
+          message = "Scène coquine.";
+          break;
+        case 4:
+          message = "Scène ridicule.";
+          break;
+        case 5:
+          message = "Rencontre d'un nouveau personnage.";
+          break;
+        case 6:
+          message = "Référence pop-culture.";
+          break;
+        case 7:
+          message = "Ecrire la scène la plus drôle et dramatique à la fois.";
+          break;
+        case 8:
+          message = "Un personnage passe du côté obscur.";
+          break;
+        case 9:
+          message = "Un personnage fait son coming out.";
+          break;
+        case 10:
+          message = "Un personnage se reconvertit religieusement.";
+          break;
+        case 11:
+          message = "Un personnage perd un membre.";
+          break;
+        case 12:
+          message = "Un personnage vit un deuil.";
+          break;
+        case 13:
+          message = "Scène la plus trash possible.";
+          break;
+        case 14:
+          message = "Un personnage s'achète un objet WTF mais super-utile.";
+          break;
+        case 15:
+          message = "C'est l'heure de l'engueulade !";
+          break;
+        case 16:
+          message = "Passage dans un autre monde (niveau cosmique hein).";
+          break;
+        case 17:
+          message = "Un personnage obtient un \"super\"-pouvoir.";
+          break;
+        case 18:
+          message = "Brisure du 4ème mur.";
+          break;
+        case 19:
+          message = "Catastrophe naturelle.";
+          break;
+        case 20:
+          message = "Passage dans une autre langue.";
+          break;
+        default:
+          message = "Erreur: Le nombre généré est invalide.";
+          break;
+      }
+      
+      document.getElementById("resultat").innerHTML = "Nombre généré : " + nombre + "<br>" + message;
+    }
+  </script>
+</head>
+<body>
+  <h1>Générateur de nombre aléatoire</h1>
+  <button onclick="genererNombreAleatoire()">Générer un nombre</button>
+  <p id="resultat"></p>
+</body>
+</html>

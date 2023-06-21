@@ -1,0 +1,28 @@
+body{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.entete{
+    background-color: rgb(253, 36, 36);    
+    height: 120px;
+    padding: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 600px;
+}
+.gauche{
+    grid-column: 1;
+    grid-row: 1;
+    background-color: rgb(129, 255, 255);
+    padding: 10px;
+
+}
+.milieu{
+    grid-column: 2/5;
+    grid-row: 1;
+    background-color: lightgreen;
+    padding: 10px;
+}

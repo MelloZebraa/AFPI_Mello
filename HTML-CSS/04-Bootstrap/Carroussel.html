@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import de bootstrap dans mon fichier HTML -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <!-- Import de mon fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Carroussel Bootstrap</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <h1>Carroussel Bootstrap</h1>
+        </header>
+
+
+        <main>
+            <h2 class="spaced">1) Basic examples</h2>
+
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/paysage-01.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/paysage-02.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/paysage-03.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <h2 class="spaced">2) With Indicators</h2>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/paysage-01.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/paysage-02.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/paysage-03.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h2 class="spaced">3) With Captions</h2>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/paysage-01.jpg" class="d-block w-100" alt="Image Paysage">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/paysage-02.jpg" class="d-block w-100" alt="Image Paysage">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/paysage-03.jpg" class="d-block w-100" alt="Image Paysage">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Mohamed's house!</h5>
+                            <p>Un jour elle sera mienne... oh oui! Un jour elle sera mienne....</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h2 class="spaced">4) With Crossfade</h2>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/paysage-01.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/paysage-02.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/paysage-03.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <h2 class="spaced">5) Autoplaying carousels</h2>
+
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/paysage-01.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/paysage-02.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/paysage-03.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <h2 class="spaced">6) Individual Interval</h2>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./assets/img/paysage-01.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./assets/img/paysage-02.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/paysage-03.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <h2 class="spaced">7) Autoplaying carousels without controls</h2>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/paysage-01.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/paysage-02.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/paysage-03.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                </div>
+            </div>
+
+
+            <h2 class="spaced">8) Disable touch swiping</h2>
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/paysage-01.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/paysage-02.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/paysage-03.jpg" class="d-block w-100" alt="Image Paysage">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </main>
+
+
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+body{
+    text-align: center;
+}
+
+.element{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.title{
+    text-decoration : underline;
+}
+
+.subTitle{
+    font-weight: normal;
+}
+
+.liens{
+    text-decoration: none;
+    color: brown;
+}
+
+.liens:hover{
+    color: orangered;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.conteneur{
+    background-color: aquamarine;
+    border: 1px dotted red;
+}
+.bold{
+    font-weight: bold;
+}
+#header{
+    border: 1px solid black;   
+}
+
+#header:hover{
+    font-size: 25px;
+    cursor: pointer;
+    background-color: aquamarine;
+}
+#main{
+    border: 1px solid orangered;    
+}
+
+#aside{
+    border: 1px solid green;    
+}
+
+#footer{
+    padding: 20px;
+    border: 1px solid blue;
+}
+

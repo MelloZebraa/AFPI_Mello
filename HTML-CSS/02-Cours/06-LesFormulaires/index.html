@@ -1,0 +1,114 @@
+<!DOCTYPE html />
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Les Formulaires en HTML</title>
+</head>
+
+<body>
+    <header class="center">
+        <div class="title">
+            <span>Découverte HTML / CSS</span>
+        </div>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <h1 class="center">Les Formulaires en HTML</h1>
+
+        <p class="center">
+            <i>
+                Les differentes balises HTML afin de récupérer des informations utilisateur
+            </i>
+        </p>
+        <form action="">
+            <fieldset>
+                <legend> Formulaire </legend>
+                <div class="space">
+                    <!-- Input type radio (selection unique) -->
+                    <label for="Mr">Mr</label>
+                    <input type="radio" name="gender" id="Mr">
+                    <label for="Mme">Mme</label>
+                    <input type="radio" name="gender" id="Mme" checked>
+                    <label for="undefined">Non Binaire</label>
+                    <input type="radio" name="gender" id="undefined">
+                </div>
+                <div class="space">
+                    <div class="line">
+                        <label for="lastname" class="tab">Nom : </label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Veuillez saisir le nom" />
+                    </div>
+                    <div class="line">
+                        <label for="firstname" class="tab">Prénom : </label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Veuillez saisir le prénom" />
+                    </div>
+                    <div class="line">
+                        <label for="dateOfBirth" class="tab-2">Date de naissance : </label>
+                        <input type="date" name="dateOfBirth" id="dateOfBirth" />
+                    </div>
+                    <div class="line">
+                        <label for="password" class="tab">Password : </label>
+                        <input type="password" name="password" id="password" placeholder="Veuillez saisir le MDP" />
+                    </div>
+                    <div class="line">
+                        <!-- Input type checkbox (selection multiple) -->
+                        <label for="java">Java</label>
+                        <input type="checkbox" name="java" id="java" />
+                        <label for="cSharp">C#</label>
+                        <input type="checkbox" name="cSharp" id="cSharp" />
+                        <label for="javascript">JavaScript</label>
+                        <input type="checkbox" name="javascript" id="javascript" />
+                        <label for="CPlusPlus">C++</label>
+                        <input type="checkbox" name="CPlusPlus" id="CPlusPlus" />
+                    </div>
+                    <div class="line">
+                        <!-- Menu déroulant avec selection unique -->
+                        <label for="Ville">Liste de villes</label>
+                        <select name="Ville" id="Ville">
+                            <option disabled selected>Ville</option>
+                            <option value="Douai">Douai</option>
+                            <option value="Lille">Lille</option>
+                            <option value="Seclin">Seclin</option>
+                            <option value="HeninBT">HeninBT</option>
+                        </select>
+                    </div>
+                    <div class="line">
+                        <!-- Menu déroulant avec selection unique -->
+                        <label for="VilleMultiple">Liste de villes (Multiple)</label>
+                        <select name="VilleMultiple" id="VilleMultiple" multiple>
+                            <optgroup label="Ville">
+                                <option value="Douai">Douai</option>
+                                <option value="Lille">Lille</option>
+                                <option value="Seclin">Seclin</option>
+                                <option value="HeninBT">HéninBT</option>
+                            </optgroup>
+                            <optgroup label="Pays">
+                                <option value="France">France</option>
+                                <option value="Deutchland">Deutchland</option>
+                                <option value="Belgium">Belgium</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="line">
+                        <label for="MaTextArea">Veuillez faire une courte description : </label>
+                        <textarea name="MaTextArea" id="MaTextArea" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="line">
+                        <input type="submit" value="Valider">
+                        <button type="reset">Annuler</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(77, 77, 77);
+    color: white;
+}
+
+header {
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    margin: 5px 0px
+}
+
+.spaced {
+    margin: 20px 0;
+}
+
+.svgSize {
+    height: 30px;
+}
+
+.colBorder {
+    border: 1px dotted rgb(0, 94, 255);
+}
+
+.itemBorder {
+    border: 1px dotted red;
+}
+
+.DropDown {
+    margin-bottom: 200px;
+}

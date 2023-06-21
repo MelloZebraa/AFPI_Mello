@@ -1,0 +1,82 @@
+body {
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+}
+
+.imgLogo {
+    font-size: 55px;
+    color: rgb(71, 71, 71);
+    background-color: white;
+    width: 84px;
+    height: 84px;
+    border-radius: 42px;
+}
+
+.mainTitle {
+    margin-left: 30px;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: coral;
+    padding: 5px;
+}
+
+.nbButton{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgb(71, 71, 71);
+    margin: 0 3px;
+    color: white;
+    height:40px;
+    width: 40px;
+}
+
+.label{
+    position: absolute;
+    z-index: 1;
+    top:20px;
+    left:20px;
+    display: none;
+}
+
+.label:hover{
+    display: block;
+}
+
+.footer {
+    border-top: 5px solid coral;
+    background-color: brown;
+    padding: 10px;
+    color: white;
+}
+
+.center {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.links{
+    color: white;
+    font-size: 20px;
+    margin: 0 3px;
+}
+
+.links:hover{
+    color: coral;   
+}
+
+

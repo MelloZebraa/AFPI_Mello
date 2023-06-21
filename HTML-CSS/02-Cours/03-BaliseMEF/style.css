@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+}
+
+.MefSpan {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+
+
+#blue {
+    color: white;
+    background-color: blue;
+}
+
+#red {
+    color:yellow;
+    background-color: red;
+}
+
+#yellow {
+    color: blue;
+    background-color: yellow;
+}
+
+.MefDiv {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(0, 255, 170);
+    margin: 10px auto 10px auto;
+    /*
+    Equivaut à cette notation
+    margin: 10px auto;
+    */
+    padding: 10px;
+    color: orangered;
+}

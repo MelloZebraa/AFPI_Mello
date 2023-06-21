@@ -1,0 +1,28 @@
+.parent1{
+    background-color: aqua;
+    height: 500px;
+    width: 500px
+}
+
+.enfant1{
+    background-color: blueviolet;
+    height: 400px;
+    width: 400px
+}
+
+.enfant2{
+    background-color: cadetblue;
+    height: 300px;
+    width: 300px
+}
+
+.enfant2{
+    background-color: burlywood;
+    height: 200px;
+    width: 200px
+}
+
+.icone{
+    color: red;
+    font-size: 50px;
+}

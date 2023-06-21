@@ -1,0 +1,30 @@
+body{
+    text-align: left;
+}
+
+.title{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.center{
+    text-align: center;
+}
+
+.space{
+    margin: 10px;
+}
+
+.line{
+    margin: 10px 0px;
+}
+
+.tab{
+    display: inline-block;
+    width: 75px;
+}
+
+.tab-2{
+    display: inline-block;
+    width: 135px;
+}
