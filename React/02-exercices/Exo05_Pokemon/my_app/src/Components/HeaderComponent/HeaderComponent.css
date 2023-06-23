@@ -1,0 +1,30 @@
+header {
+    background-color: white;
+    height: 75px;
+    width: 55%;
+    margin-left: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.home {
+    font-size: 25px;
+    color: gray;
+    text-decoration: none;
+}
+
+.home:hover {
+    color: gray;
+    border-bottom: 3px solid rgb(254, 27, 0);
+}
+
+h1 {
+    color: gray;
+}
+
+.logoPokemon {
+    height: 50px;
+    margin: 25px 20px;
+}

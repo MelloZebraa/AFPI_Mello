@@ -1,0 +1,12 @@
+body {
+    background-image: url("https://wallpapercrafter.com/desktop/123766-Pokmon-Lapras-pattern.png");
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 55%;
+    margin-left: 300px;
+}

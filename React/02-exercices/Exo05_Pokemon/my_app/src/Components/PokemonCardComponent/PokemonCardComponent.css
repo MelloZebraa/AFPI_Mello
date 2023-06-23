@@ -1,0 +1,16 @@
+.card {
+    width: 10rem;
+    height: 15rem;
+    margin-top: 15px;
+}
+
+h5{
+    text-decoration: none;
+    color: rgb(0, 128, 255);
+}
+
+.card:hover {
+    text-decoration: none;
+    background-color: grey;
+    color: black;
+}

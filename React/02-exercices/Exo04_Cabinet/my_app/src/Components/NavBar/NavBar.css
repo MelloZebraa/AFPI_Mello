@@ -1,0 +1,42 @@
+.navBarComponent {
+    background-color: grey;
+    height: 70px;
+}
+
+ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+    font-size: 25px;
+    margin: 0 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.lien {
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.lien:hover{
+    background-color: orangered;
+    border-radius: 10px;
+}
+
+.lienActive {
+    text-decoration: none;
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+.lienActive:hover{
+    border-bottom: 3px solid orangered;
+    color: white;
+}
